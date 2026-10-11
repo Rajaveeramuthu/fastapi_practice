@@ -3,14 +3,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-# Home API
 @app.get("/")
 def home():
     return {
         "message": "Hello! FastAPI is working successfully."
     }
 
-# User API
+
 @app.get("/user")
 def get_user():
     return {
@@ -19,7 +18,7 @@ def get_user():
         "role": "Developer" 
     }
 
-# Addition API
+
 @app.get("/add")
 def add_numbers(a: int, b: int):
     return {
