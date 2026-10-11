@@ -1,0 +1,8 @@
+
+[project]
+name = "fastapi-project"
+version = "0.1.0"
+dependencies = ["fastapi[standard]"]
+
+[tool.fastapi]
+entrypoint = "main:app"
